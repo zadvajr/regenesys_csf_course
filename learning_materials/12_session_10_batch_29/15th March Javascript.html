@@ -1,0 +1,274 @@
+<!--
+<html>
+<head>
+    <title>My First JavaScript Program</title>
+	<script> 
+        window.alert('Hello, World!'); //this is a inbuilt function
+		document.write(5*10); //background space to write
+    </script>
+</head>
+<body>
+</body>
+</html>
+-->
+
+<!--
+<html>
+	<body>
+		<h1>My First Web Page</h1> 
+		<p>My first paragraph</p>
+			<script>
+				document.write(5 + 6); 
+				alert(5 + 6);//pop up box
+			</script>
+	</body> 
+</html>
+-->
+
+<!--
+variable declaration and usage of variables
+//double quotes is used to display text/strings
+//whatever that is there inbetween double quotes is treated as strings
+-->
+
+<!--
+  <html>
+   <head>
+      <title>Variables</title>
+      <script>
+		var one = 21;
+		var two = 3;
+		var add = one + two;
+		var minus = one - two;
+		var multiply = one * two;
+		var divide = one/two;
+		
+		output function - displays everything as a string/text in the output
+		 here plus symbol acts like a concatenation operator
+		 
+		document.write("<h3>First No = " + "21" + "Second No = " + two +"</h3>");
+		document.write("<p> First No = " + one + "Second No = " + two + "</p>");
+		
+		alert("First No = " + one + "\n" + "Second No = " + two + "\n");
+		
+		document.write(one  + " + " + two + " = " + add + "<br/>");
+		document.write(one  + " - " + two + " = " + minus + "<br/>");
+        document.write(one  + " * " + two + " = " + multiply + "<br/>");
+        document.write(one  + " / " + two + " = " + divide + "<br/>");
+		
+      </script>
+      </head>
+      <body>
+      </body>
+      </html>
+-->
+<html>
+    <body>
+		<h2>JavaScript Arrays</h2>
+			<script>
+				var student = "Albert";
+				var students = ["Joshua", "Vincent", "Wilfred"];
+				var number = 10;
+				var numbers = [1,2,3,4,5,6,7,8,9]
+				
+				document.write(student);
+				document.write("<br>");
+				document.write(number);
+				document.write("<br>");
+				document.write(students);
+				document.write("<br>");
+				document.write(numbers);
+				document.write("<br>");
+				document.write(students[2]);
+				document.write("<br>");
+				document.write(numbers[8]);
+				document.write("<br>");
+				document.write(numbers[0] + numbers[4]);
+				document.write("<br>");
+			    document.write(numbers[0] + "," + numbers[4]);
+			</script>
+	</body>
+</html>
+<!--
+<html>
+    <body>
+		<h2>JavaScript Arrays</h2>
+			<script>
+				var students = ["Joshua", "Vincent", "Wilfred"];
+				var numbers = [0,1,2,3,4,5,6,7,8,9]
+				document.write("<br/>"+students[1]+students[2]+"<br/>");
+				document.write(numbers);
+				//alert(cars);
+			</script>
+	</body>
+</html>
+-->
+
+<!--
+<html>
+<head>
+    <title>JavaScript Arrays</title>
+</head>
+<body>
+    <script>
+        // Integer array
+        let integerArray = [1, 2, 3, 4, 5];
+
+        // Float array
+        var floatArray = [1.23, 4.56, 7.89, 3.14];
+
+        // String array
+        var stringArray = ["apple", "banana", "orange", "grape"];
+
+        // Displaying arrays using document.write()
+        document.write("<h2>Integer Array:</h2>");
+        document.write("<p>" + integerArray + "</p>");
+		
+		//var integerArray = [9,10];
+		document.write("<h2>Integer Array:</h2>");
+        document.write("<p>" + integerArray + "</p>");
+		
+        document.write("<h2>Float Array:</h2>");
+        document.write("<p>" + floatArray[3] + "</p>");
+
+        document.write("<h2>String Array:</h2>");
+        document.write("<p>" + stringArray[1] + "</p>");
+    </script>
+</body>
+</html>
+-->
+
+<!--
+<html>
+
+<head>
+    <title>Comparison and Logical Operations</title>
+</head>
+
+<body>
+    <script>
+        // Given variables
+        var one = 21;
+        var two = 3;
+
+        // Comparison operations
+        document.write("<h3>Comparison Operations:</h3>");
+        document.write("one > two: " + (one > two) + "<br>");   // Output: true (21 is greater than 3)
+        document.write("one < two: " + (one < two) + "<br>");   // Output: false (21 is not less than 3)
+        document.write("one >= two: " + (one >= two) + "<br>"); // Output: true (21 is greater than or equal to 3)
+        document.write("one <= two: " + (one <= two) + "<br>"); // Output: false (21 is not less than or equal to 3)
+        document.write("one === two: " + (one === two) + "<br>"); // Output: false (21 is not equal to 3)
+        document.write("one !== two: " + (one !== two) + "<br>"); // Output: true (21 is not equal to 3)
+
+        // Logical operations
+        document.write("<h3>Logical Operations:</h3>");
+       
+	   document.write("one > 10 && two > 1: " + (one > 10 && two > 1) + "<br>");
+		// Output: true (both conditions are true)
+        
+		document.write("one > 10 || two > 10: " + (one > 10 || two > 10) + "<br>"); // Output: true (at least one condition is true)
+       
+	   document.write("!one: " + !one + "<br>");   // Output: false (logical NOT, one is truthy, so its negation is false)
+       
+	   document.write("!(one > 10): " + !(one > 10) + "<br>"); // Output: false (logical NOT, the condition is true, its negation is false)
+    </script>
+</body>
+</html>
+-->
+
+<!--
+<html>
+<head>
+    <title>JavaScript If-Else Control Structure</title>
+</head>
+<body>
+    <script>
+        //var age = 18;
+		let age = prompt("Enter your age:");
+
+        if (age >= 18) 
+		{
+            // If the person is older than 18
+document.write("<p>You are eligible to vote.</p>" + age);
+        } 
+		else 
+		{
+            // If the person is younger than 18
+            document.write("<p>You are not eligible to vote yet.</p>");
+        }
+    </script>
+</body>
+</html>
+-->
+
+<!-- 
+<html>
+<head>
+    <title>JavaScript If-Else Control Structure</title>
+</head>
+<body>
+    <script>
+        
+		var a = prompt("Enter:");
+		var b = prompt("Enter:");
+        var c = prompt("Enter:");
+		
+		if (a > b && a > c) 
+		{
+          document.write("<p>A is greatest</p>");
+        } 
+		else if  (b > a && b > c)
+		{
+          document.write("<p>B is greatest</p>");
+        }
+		else
+		{
+		  document.write("<p>C is greatest</p>");
+		}
+    </script>
+</body>
+</html>
+-->
+
+<!--
+<html>
+<head>
+    <title>JavaScript While loop</title>
+</head>
+<body>
+    <script>
+        //var age = 18;
+		var age = prompt("Enter your age:");
+
+        while (age > 18) //there is no stop condition
+		{
+            alert("You are eligible to vote");
+			age = 10
+        } 
+		
+            // If the person is younger than 18
+        document.write("<p>You are not eligible to vote yet.</p>");
+    </script>
+</body>
+</html>
+-->
+
+<!--
+<html>
+<head>
+    <title>JavaScript Input using prompt()</title>
+</head>
+<body>
+    <script>
+        // Getting input using prompt()
+        let Name = prompt("Please enter your name:");
+        const pi = 3.14
+		//pi = pi + 1
+        // Displaying the user's name using document.write()
+        document.write("<p>Hello, " + Name + "!</p>");
+		document.write("Pi value is " + pi + "!</p>");
+		
+    </script>
+</body>
+</html>
+-->

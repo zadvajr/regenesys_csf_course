@@ -1,0 +1,7 @@
+python==3.13.2
+vmware_workstation_pro_17.6.1
+7zip
+Vscode
+MsOffice
+kali_linux
+VC_distributable
