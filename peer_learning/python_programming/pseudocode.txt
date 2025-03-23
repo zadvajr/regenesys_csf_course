@@ -1,0 +1,6 @@
+
+Pseudocode - 
+1. Accept the two numbers from the user
+2. save them in a variable num1 and num2
+3. create a variable sum and assign the sum of num1 and num2 into it
+4 print the sum to the user
