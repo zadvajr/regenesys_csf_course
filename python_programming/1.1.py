@@ -23,6 +23,7 @@ print("Difference:", diff)
 print("Product:", product)
 print("Quotient:", quotient)
 
+
 # Output
 # Enter first number: 10
 # Enter second number: 5
@@ -32,3 +33,5 @@ print("Quotient:", quotient)
 # Quotient: 2.0
 
 # In this program, we accept two numbers from the user using the input() function. The numbers are converted to floating-point numbers using the float() function. We then perform arithmetic operations on the numbers using the +, -, *, and / operators. The results are stored in variables sum, diff, product, and quotient. Finally, we display the results using the print() function.
+
+#end
